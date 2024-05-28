@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-kwy3j!4l!o1j1#j74rlb%wn9x9=92etq5_h)&p$uf5dk08j@@8
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "172.20.10.7",
+    "endpoint.up.railway.app",
 ]
 
 
@@ -133,10 +133,3 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
-STATIC_URL = 'static/'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")
-]
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

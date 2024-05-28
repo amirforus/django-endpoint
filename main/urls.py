@@ -21,4 +21,5 @@ from core.views import IpView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IpView.as_view()),
+    
 ]
